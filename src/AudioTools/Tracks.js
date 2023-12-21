@@ -55,7 +55,8 @@ class ToneTrack {
             this.out = outputGain;
 
             this.oscillator.type = this.settings.waves[0].wave;
-            this.oscillator.frequency.setValueAtTime(this.tone, this.audioContext.currentTime);
+
+            this.oscillator.frequency.setValueAtTime(this.settings.waves[0].frequency, this.audioContext.currentTime);
             this.oscillator.start();
         } catch (err) {
             console.log(err)

@@ -4,7 +4,7 @@ import { LFOTunner } from "../AudioApp/configuration/LFOTunner";
 import { ReverbSettings } from "../AudioApp/configuration/Settings";
 import { EnvSettings } from "../AudioApp/configuration/Settings";
 
-const TrackModel = (tone=1) => {
+const TrackModel = (tone=440) => {
     return {
         tone: tone,
         label: null,
@@ -14,7 +14,7 @@ const TrackModel = (tone=1) => {
             waves: [
                 {
                     wave: 'sine',
-                    frequency: tone
+                    frequency: 440
                 }
             ],
             gain: 1

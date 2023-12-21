@@ -641,7 +641,7 @@ class ProjectEditor extends React.Component {
           }
           if (tone.seconds.includes(i)) {
             let hsl = {
-              backgroundColor: `hsl(${tone.tone * 360 / 3000} 50% 50%)`
+              backgroundColor: `hsl(${tone.settings.waves[0].frequency * 360 / 3000} 50% 50%)`
             }
             selected = (
               <div
@@ -681,7 +681,7 @@ class ProjectEditor extends React.Component {
                 })
               }
             </select> */}
-            <h1>{tone.label} ({tone.tone})</h1>
+            <h1>{tone.label} ({tone.settings.waves[0].frequency})</h1>
             {/* Track Settings Button */}
             <button key={crypto.randomUUID()}
               onClick={() => component.trackSettings(index)}
