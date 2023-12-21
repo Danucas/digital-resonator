@@ -1,0 +1,186 @@
+.track-settings-container {
+    z-index: 100;
+    width: fit-content;
+    padding: 12px 24px;
+    top: 0;
+    left: 12px;
+    border-radius: 12px;
+    height: fit-content;
+    display: block;
+    position: absolute;
+    color: rgb(64, 64, 64);
+    background-color: rgb(241, 241, 241);
+    padding-top: 24px;
+    box-shadow: 0px 0px 12px black;
+}
+
+.track-settings-container p {
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.track-settings-container h2 {
+    font-size: 12px;
+}
+
+.settings-tabs {
+    display: flex;
+}
+
+.active {
+    background-color: rgba(131, 153, 224, 0.361);
+}
+
+.active p {
+    font-weight: bold;
+}
+
+.tab-container {
+    display: flex;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 0px 12px;
+    width: 70px;
+}
+
+.tab-container p {
+    text-align: center;
+    width: 50px;
+    min-width: 50px;
+}
+
+.tab-container:hover {
+    background-color: rgba(131, 153, 224, 0.361);
+}
+
+.tab-container button {
+    border: none;
+    margin: 0;
+    background-color: transparent;
+}
+
+.icon.icon-delete-settings-tab {
+    cursor: pointer;
+    width: 14px;
+    height: 14px;margin-top: 14px;
+    background-color: #959595;
+    -webkit-mask-image: url(../../icons/cancel.svg);
+    mask-image: url(../../icons/cancel.svg);
+}
+
+.icon.icon-close-settings {
+    position: absolute;
+    right: -8px;
+    top: 12px;
+    cursor: pointer;
+    width: 14px;
+    height: 18px;
+    margin: 0;
+    background-color: #959595;
+    -webkit-mask-image: url(../../icons/cancel.svg);
+    mask-image: url(../../icons/cancel.svg);
+}
+
+.icon.icon-close-settings:hover {
+    background-color: #3e3e3e;
+}
+
+.icon.icon-delete-settings-tab:hover {
+    background-color: rgb(170, 1, 1);
+}
+
+.components-container {
+    z-index: 100;
+    padding: 12px 24px;
+    border-radius: 12px;
+    top: 0px;
+    left: calc(50% - 200px);
+    position: absolute;
+    color: white;
+    background-color: rgb(76, 100, 128);
+}
+
+.components-list {
+    display: flex;
+}
+
+.component-item {
+    margin: 9px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 18px;
+    height: fit-content;
+    background-color: rgb(144, 152, 153);
+}
+
+.component-item:hover {
+    background-color: rgb(76, 138, 146) !important;
+}
+
+.component-item h2 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.component-item p {
+    width: 100%;
+    margin: 0;
+    font-size: 8px;
+    text-align: center;
+    padding: 0;
+}
+
+.created-components {
+    display: flex;
+    max-width: 40%;
+    overflow-x: scroll;
+}
+
+.created-components p {
+    text-align: left;
+    padding: 4px 12px;
+}
+
+.created-components.component-item {
+    margin: 0;
+}
+
+
+
+
+.add-component {
+    width: fit-content;
+    margin: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 38px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid rgb(96, 96, 96);
+    background-color: rgb(96, 96, 96);
+}
+
+.add-component:hover {
+    border-color: black;
+    background-color: white;
+    color: black;
+}
+
+
+.icon.icon-grab-window {
+    width: 30px;
+    height: 26px;
+    cursor: move;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 15px);
+    background-color: #7a7a7a;
+    -webkit-mask-image: url(../../icons/ellipsis.svg);
+    mask-image: url(../../icons/ellipsis.svg);
+}

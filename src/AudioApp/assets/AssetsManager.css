@@ -1,0 +1,137 @@
+.assets-manager {
+    position: absolute;
+    width: 320px;
+    top: 24px;
+    left: 24px;
+    z-index: 100;
+    background-color: rgb(130, 173, 211);
+    border-radius: 8px;
+    border: 2px solid rgb(102, 102, 102);
+    padding-top: 12px;
+    height: 50vh;
+    overflow-y: scroll;
+}
+
+.assets-manager h1 {
+    font-size: 16px !important;
+}
+
+
+.assets-list-container {
+
+}
+
+.asset-item-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 4px;
+}
+
+.asset-item-container p {
+  position: absolute;
+  bottom: 4px;
+  color: white;
+  left: 10px;
+  z-index: 200;
+  font-size: 10px;
+  margin: 0;
+}
+
+
+.audio-track-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 0;
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+    overflow: visible;
+  }
+  
+  .audio-track-waveform {
+    margin: 0;
+    position: absolute;
+    box-sizing: border-box;
+    border: 2px solid #51f542;
+    background-color: #373737;
+  }
+  
+  .audio-track-indicator {
+    margin: 0;
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+
+  .icon.icon-play-audio-track {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    z-index: 100;
+
+    background-color: rgb(255, 255, 255);
+    -webkit-mask-image: url(../../icons/play.svg);
+    mask-image: url(../../icons/play.svg);
+  }
+  
+  .audio-track-play {
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    z-index: 100;
+    background-color: green;
+  }
+  
+  .icon.icon-play-audio-track:hover {
+    background-color: rgb(0, 255, 213);
+  }
+
+  .openfile-button {
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    border: none;
+    background-color: rgb(31, 112, 108);
+    padding: 6px 12px;
+    border-radius: 4px;
+  }
+
+
+  
+.track-options-button {
+  position: absolute;
+  left: 220px;
+  top: 8px;
+  margin: 0 !important;
+  z-index: 1000;
+  border: 3px solid white;
+  color: white;
+  border-radius: 4px;
+  background-color: rgba(64, 64, 64, 0.46);
+}
+
+.track-options-button:hover {
+  color: #17c4f9;
+  border-color: #17c4f9;
+}
+
+
+.track-hidden-container {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  top: 0;
+  left: 100px;
+  z-index: 200;
+}

@@ -1,0 +1,19 @@
+.lfo-tunner-container {
+    margin: 4px;
+    position: relative;
+    display: flex;
+    padding: 0px 24px;
+    border: 2px solid gray;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.lfo-tunner-container button {
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 8px 8px;
+    font-size: 14px;
+}

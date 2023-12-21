@@ -1,0 +1,236 @@
+.nav-bar {
+    position: absolute;
+    height: 60px;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    background-color: rgb(103, 103, 103);
+}
+.nav-content {
+    margin-left: 80px;
+    display: flex;
+}
+.nav-content p {
+    color: white;
+    padding: 4px 24px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+.nav-content p:hover {
+    background-color: #01ab9d;
+}
+
+.nav-content p:active {
+    background-color: #0e5c45;
+}
+
+.nav-bar input {
+    background-color: rgb(174, 174, 174);
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    padding-left: 12px;
+    padding-top: 6px;
+    border: none;
+    height: 36px;
+    margin-top: 8px;
+    border-radius: 8px;
+}
+
+.nav-bar h1 {
+    margin: 0;
+    height: 60px;
+    font-size: 22px;
+    text-align: left;
+    padding-left: 48px;
+    line-height: 60px;
+    color: #64FFAB;
+}
+
+.content-container {
+    position: absolute;
+    width: 100vw;
+    top: 60px;
+    height: calc(100vh - 60px);
+    max-height: calc(100vh - 60px);
+    overflow: hidden;
+    background-color: black;
+}
+
+.content-container h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}
+
+.projects-container {
+    position: relative;
+    width: 70vw;
+    margin-left: 15vw;
+    display: grid;
+    height: 80%;
+    max-height: calc(80% - 200px);
+    grid-template-columns: 32% 32% 32%;
+    row-gap: 12px;
+    column-gap: 12px;
+    overflow-y: scroll;
+    padding-bottom: 200px;
+}
+
+.project-card {
+    cursor: pointer;
+    background-color: #216752;
+    border-radius: 12px;
+    border: 3px solid #216752;
+    padding-bottom: 14px;
+    max-height: 139px;
+}
+
+.icon {
+    border: none;
+    height: 40px;
+    margin: -3px 4px -3px 0;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    min-width: 40px;
+    width: 40px;
+}
+
+.icon.play-card-icon {
+    background-color: rgb(255, 255, 255);
+  -webkit-mask-image: url(../../icons/play-circle.svg);
+  mask-image: url(../../icons/play-circle.svg);
+}
+
+.icon.play-card-icon:hover {
+    background-color: #4dddb2;
+}
+
+.project-card:hover {
+    border-color: #4dddb2;
+    
+}
+
+.card-play-control {
+    width: 90%;
+    margin-left: 5%;
+    display: grid; 
+    grid-template-columns: 60px calc(90% - 60px);
+    column-gap: 0px;
+}
+
+.project-card h1 {
+    font-size: 20px;
+    text-align: left;
+    padding-top: 4px;
+}
+
+.project-card p {
+    text-align: left;
+    padding-left: 48px;
+    line-height: 12px;
+    font-size: 14px;
+    margin: 4px 0px;
+    color: white;    
+}
+
+.project-card button {
+    height: 36px;
+}
+
+.add-project {
+
+    display: block;
+    background-color: #B9F9E6;
+    border-color: #B9F9E6;
+    color: #0e5c45;
+}
+
+.add-project:hover {
+    border-color: #16c08d;
+    background-color: #16c08d;
+}
+
+.add-project:active {
+    border-color: #16a7c0;
+    background-color: #16a7c0;
+}
+
+.add-project p {
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+    color: #0e5c45;
+    
+}
+
+.icon.icon-add-project {
+    margin-left: calc(50% - 18px);
+    background-color: #0e5c45;
+  -webkit-mask-image: url(../../icons/add-square.svg);
+  mask-image: url(../../icons/add-square.svg);
+}
+
+
+.icon.icon-back {
+    width: 16px;
+    border-radius: 50;
+    margin-top: 23px;
+    height: 16px;
+    background-color: white;
+  -webkit-mask-image: url(../../icons/chevron-left.svg);
+  mask-image: url(../../icons/chevron-left.svg);
+}
+
+.icon.icon-back:hover {
+    background-color: #16a7c0;
+}
+
+.icon.icon-refresh {
+    margin-left: 60px;
+    width: 16px;
+    border-radius: 50;
+    margin-top: 23px;
+    height: 16px;
+    background-color: white;
+  -webkit-mask-image: url(../../icons/refresh.svg);
+  mask-image: url(../../icons/refresh.svg);
+}
+
+.icon.icon-refresh:hover {
+    background-color: #64FFAB;
+}
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #a4a4a4;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #01ab9d;
+
+    border-radius: 2px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1bc2d2;
+  }
